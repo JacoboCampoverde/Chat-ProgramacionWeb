@@ -1,0 +1,67 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #282c34;
+}
+
+.login-form {
+  width: 100%;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #f3f3f3;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+  width: 100%;
+  max-width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.form-group input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.form-group input[type="file"]::before {
+  content: 'Foto de Perfil';
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #5c5858;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 85%;
+  padding: 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+  
+}

@@ -1,0 +1,141 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.messages-container {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #282c34;
+  border-bottom: 1px solid #ddd;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #282c34;
+  border-top: 1px solid #dddddd;
+}
+
+.input-container input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.input-container input[type="file"] {
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: #007bff;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 60%;
+  position: relative;
+}
+
+.message.sent {
+  align-self: flex-end;
+  background-color: #dcf8c6;
+}
+
+.message.received {
+  align-self: flex-start;
+  background-color: #282c34;
+  border: 1px solid #ddd;
+}
+
+.message .message-menu {
+  display: flex;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: #007bff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.message .message-menu button {
+  border: none;
+  background: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.message .message-menu button:hover {
+  background-color: #f0f0f0;
+}
+
+.message-text {
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.message a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+.message-sender, .message-timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+.typing-indicator {
+  font-style: italic;
+  color: #888;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-profile .alias {
+  font-weight: bold;
+}
+
+.user-profile .email {
+  font-size: 0.9em;
+}
